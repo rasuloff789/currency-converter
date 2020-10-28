@@ -1,3 +1,5 @@
+alert(`Assalomu alaykum, Karrupsiyaga qarshi kurashish agentligimizga xush kelibsiz brat))`)
+
 var elShowResult = document.querySelector('.show-result');
 var elResultInfo = document.querySelector('.result');
 
@@ -11,7 +13,7 @@ elShowResult.addEventListener('click', function (event) {
   if (elCounterInput > 0) {
     elResultInfo.textContent = `${counter} so'm`;
   } else {
-    elResultInfo.textContent = `Karrupsiyaga qarshi kurashish agentligimiz birodar ))`
+    elResultInfo.textContent = `Karrupsiyaga qarshi kurashish agentligimiz brat ))`
   }
 
 })
