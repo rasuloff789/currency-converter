@@ -7,6 +7,7 @@ elShowResult.addEventListener('click', function (event) {
   event.preventDefault();
 
   var elCurrency = document.querySelector('.currency-select').value;
+  elCurrency = parseFloat(elCurrency, 10);
   var elCounterInput = document.querySelector('.counter-input').value;
   var counter = elCounterInput * elCurrency;
 
