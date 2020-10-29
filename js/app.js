@@ -24,7 +24,7 @@ elCounterForm.addEventListener('submit', function (event) {
     return;
   }
 
-  if (elCounterSum < 0) {
+  if (elCounterSum < 1) {
     elResultInfo.textContent = `Iltimos 0 dan katta son kiriting!`;
     elResultInfo.classList.add('alert');
     elResultInfo.classList.add('alert-danger');
