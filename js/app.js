@@ -18,8 +18,8 @@ elCounterForm.addEventListener('submit', function (event) {
     elResultInfo.textContent = `${counter} so'm`;
     elResultInfo.classList.remove('alert');
     elResultInfo.classList.remove('alert-danger');
-    elResultInfo.classList.remove('bg-dark');
-    elResultInfo.classList.remove('text-white');
+    elResultInfo.classList.remove('bg-transparent');
+    elResultInfo.classList.remove('border-info');
     document.body.style.backgroundImage = "url('../img/dollars.png')";
     return;
   }
@@ -28,8 +28,6 @@ elCounterForm.addEventListener('submit', function (event) {
     elResultInfo.textContent = `Iltimos 0 dan katta son kiriting!`;
     elResultInfo.classList.add('alert');
     elResultInfo.classList.add('alert-danger');
-    elResultInfo.classList.remove('bg-dark');
-    elResultInfo.classList.remove('text-white');
     return;
   }
 
@@ -37,8 +35,6 @@ elCounterForm.addEventListener('submit', function (event) {
     elResultInfo.textContent = `Summa kiritilmagan, iltmos kiriting!`;
     elResultInfo.classList.add('alert');
     elResultInfo.classList.add('alert-danger');
-    elResultInfo.classList.remove('bg-dark');
-    elResultInfo.classList.remove('text-white');
     return;
   }
 });
