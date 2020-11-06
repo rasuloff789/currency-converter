@@ -1,16 +1,27 @@
+// Elementlar topildi 
+
 var elCounterForm = document.querySelector('.counter-form');
 var elShowResult = elCounterForm.querySelector('.show-result');
 var elResultInfo = elCounterForm.querySelector('.result');
 
+// Va formani submitiga quloq solindi 
+
 elCounterForm.addEventListener('submit', function (event) {
   event.preventDefault();
+
+  // Input va Selectni valuelari bir o'zgaruvchiga saqlandi 
 
   var elCurrency = elCounterForm.querySelector('.currency-select').value;
   elCurrency = parseFloat(elCurrency, 10);
   var elCounterInput = elCounterForm.querySelector('.counter-input').value;
   var elCounterSum  = parseFloat(elCounterInput, 10);
 
+  // Va input hamda selectni valuelari bir birga ko'paytirildi 
+
+  // Va oxiri yani . dan kegin 2 honali son bo'sin deb checklandi 
   var counter = (elCounterInput * elCurrency).toFixed(2);
+
+  // Va shartlar qo'yildi
 
   if (elCounterSum > 0) {
     elResultInfo.classList.add('alert');
